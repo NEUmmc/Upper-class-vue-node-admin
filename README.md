@@ -16,3 +16,5 @@ module.exports = {
     }  
 }
 ```
+
+用户名密码都是admin
