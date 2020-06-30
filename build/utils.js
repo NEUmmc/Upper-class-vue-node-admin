@@ -25,7 +25,10 @@ exports.cssLoaders = function (options) {
   const postcssLoader = {
     loader: 'postcss-loader',
     options: {
-      sourceMap: options.sourceMap
+      sourceMap: options.sourceMap,
+      plugins: [
+        require('autoprefixer')()　　//***********也可以新增配置文件，配置文件在本地的myvue中
+      ]
     }
   }
 
